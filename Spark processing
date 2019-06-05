@@ -1,0 +1,16 @@
+### Creación del Dataframe
+
+
+val tweetsRDD = sc.textFile("/home/laura/Documentos/ProyectoFinal/tweetsfinal.txt") 
+
+tweetsRDD.take(1).foreach(println)
+
+val splitRDD = tweetsRDD.map(x => x.split('"'))
+
+val variablesRDD = splitRDD.map(x => (x(9),x(3),x(13)))
+
+variablesRDD.take(1).foreach(println)
+
+val variablesDF = variablesRDD.toDF()
+
+variablesDF.registerTempTable("Tweets")
