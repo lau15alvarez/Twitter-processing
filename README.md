@@ -10,3 +10,4 @@ La arquitectura es la siguiente:
 
 La ingesta con NIFI se realizó de la siguiente forma:
 
+![Captura de pantalla de 2019-06-05 22-45-47](https://user-images.githubusercontent.com/51421186/58989199-be354980-87e3-11e9-9419-aef0ffdd7c36.png)
